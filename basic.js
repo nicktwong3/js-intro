@@ -193,6 +193,6 @@ welcome('Osborne');
 welcome; // this doesn't run the function
 
 // to run the function in object person (line 96)
-person.sayHi()
+person.sayHi();
 
-
+console.log(welcome);

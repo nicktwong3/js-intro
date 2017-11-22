@@ -17,11 +17,16 @@
 
 // 1.1
 // TODO: code goes here
-
+var streetNumber = '350';
+var street = '3rd St.';
+var city = 'San Francisco';
+var state = 'CA';
+var zipCode = '94017';
 // 1.2
 // TODO: code goes here
 // console.log(fullAddress);
-
+var fullAddress = streetNumber + ' ' +street+ ' ' +city+ ', ' +state+ ' ' +zipCode;
+console.log(fullAddress);
 
 /*
   2.  NUMBER
@@ -40,10 +45,15 @@
 
 // 2.1
 // TODO: code goes here
-
+var n1 = 100;
+var n2 = 5;
 // 2.2
 // TODO: code goes here
-
+var sum = n1+n2;
+var difference = n1-n2;
+var product = n1*n2;
+var quotient = n1/n2;
+console.log (sum, difference, product, quotient);
 
 /*
   3.  BOOLEAN
@@ -75,7 +85,12 @@
 
 // 3.1
 // TODO: code goes here
-
+var boolFullAddress = fullAddress == '350 3rd St. San Francisco, CA 94017';
+var boolSum = sum == 105;
+var boolDiff = difference == 95;
+var boolProd = product == 500;
+var boolQuot = quotient == 20;
+console.log(boolFullAddress, boolSum, boolDiff, boolProd, boolQuot);
 // 3.2
 // TODO: code goes here
 
@@ -113,7 +128,29 @@
 
 // 4.1
 // TODO: code goes here
-
+var addition = function (x, y) {
+  return x+y;
+}
+function subtraction (x, y) {
+  return x-y;
+}
+var multiplication = function (x, y) {
+  return x*y;
+}
+function division (x, y) {
+  return x/y;
+}
+var double = function (x) {
+  return 2*x;
+}
+function square (x) {
+  return x*x;
+}
+/*
+var x = parseInt(prompt('Enter x: '));
+var y = parseInt(prompt('Enter y: '));
+console.log(addition(x, y), subtraction(x, y), multiplication(x, y), division(x, y), double(x), square(x));
+*/
 
 /*
   5.  OBJECT
@@ -141,13 +178,39 @@
 
 // 5.1
 // TODO: code goes here
-
+var cars = [{
+  year: 1972,
+  make: 'Datsun',
+  model: '240z',
+  mileage: '173937',
+  color: 'yellow',
+  plate: '123xyz',
+  manual: true,
+  forSale: false
+},
+{
+  year: 2000,
+  make: 'Datsun',
+  model: '240z',
+  mileage: '173937',
+  color: 'yellow',
+  plate: '123xyz',
+  manual: true,
+  forSale: false
+}];
 // 5.2
 // TODO: code goes here
-
+console.log(cars[0].model);
 // 5.3
 // TODO: code goes here
-
+function isClassicCar (car) {
+if(new Date().getFullYear()-car.year>=30)
+  console.log('Classic car.');
+else
+  console.log('Not a classic car.');
+}
+for(var i=0;i<cars.length;i++)
+  isClassicCar(cars[i]);
 
 /* 
   6.  ARRAY
@@ -162,9 +225,12 @@
 
 // 6.1
 // TODO: code goes here
-
+var colors = ['red', 'white', 'blue', 'green', 'yellow'];
 // 6.2
 // TODO: code goes here
-
+console.log(colors[2]);
 // 6.3
 // TODO: code goes here
+for(var i=0;i<colors.length;i++)
+  console.log(colors[i]);
+
